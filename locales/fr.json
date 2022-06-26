@@ -28,12 +28,6 @@
       "firstOption": "Père",
       "secondOption": "Mère",
       "mix": "Mix"
-    },
-    "race": {
-      "title": "Race",
-      "shape": "Visage",
-      "skin": "Peau",
-      "mix": "Mix"
     }
   },
   "faceFeatures": {
