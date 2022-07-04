@@ -234,6 +234,7 @@ RegisterNetEvent('qb-clothes:client:CreateFirstCharacter', function()
                 if (appearance) then
                     TriggerServerEvent('fivem-appearance:server:saveAppearance', appearance)
                     ResetRechargeMultipliers()
+                    TriggerEvent("UI:open:boot")
                 end
             end, config)
         end, Config.PedMenuGroup)
