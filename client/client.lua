@@ -230,12 +230,14 @@ RegisterNetEvent('qb-clothes:client:CreateFirstCharacter', function()
         QBCore.Functions.TriggerCallback("QBCore:HasPermission", function(permission)
             local config = getConfigForPermission(permission)
             config.enableExit = false
+            TriggerEvent("backitems:displayItems", false)
             exports['fivem-appearance']:startPlayerCustomization(function(appearance)
                 if (appearance) then
                     TriggerServerEvent('fivem-appearance:server:saveAppearance', appearance)
                     ResetRechargeMultipliers()
                     TriggerEvent("UI:open:boot")
                 end
+                TriggerEvent("backitems:displayItems", true)
             end, config)
         end, Config.PedMenuGroup)
     end)
@@ -244,10 +246,10 @@ end)
 function OpenShop(config, isPedMenu, shopType)
     QBCore.Functions.TriggerCallback("fivem-appearance:server:hasMoney", function(hasMoney, money)
         if not hasMoney and not isPedMenu then
-            QBCore.Functions.Notify("Not enough cash. Need $" .. money, "error")
+            QBCore.Functions.Notify("Not enough cash. Need £" .. money, "error")
             return
         end
-
+        TriggerEvent("backitems:displayItems", false)
         exports['fivem-appearance']:startPlayerCustomization(function(appearance)
             if appearance then
                 if not isPedMenu then
@@ -257,6 +259,7 @@ function OpenShop(config, isPedMenu, shopType)
             else
                 QBCore.Functions.Notify("Cancelled Customization")
             end
+            TriggerEvent("backitems:displayItems", true)
         end, config)
     end, shopType)
 end
