@@ -1,16 +1,16 @@
 Config = {}
 
-Config.Debug = false
+Config.Debug = true
 
 Config.ClothingCost = 100
 Config.BarberCost = 100
 Config.TattooCost = 100
 Config.SurgeonCost = 100
 
-Config.UseTarget = GetConvar("UseTarget", "false") == "true"
+Config.UseTarget = GetConvar("UseTarget", "false") == "false"
 Config.UseRadialMenu = false
 
-Config.EnablePedsForShops = true
+Config.EnablePedsForShops = false
 Config.EnablePedsForClothingRooms = true
 Config.EnablePedsForPlayerOutfitRooms = true
 
@@ -129,8 +129,8 @@ Config.Stores = {
     {
         shopType = "clothing",
         coords = vector4(1693.2, 4828.11, 42.07, 188.66),
-        width = 4,
-        length = 4,
+        width = 13,
+        length = 11,
         showBlip = true, -- showBlip overrides the blip visibilty configured above for the group
         zone = {
             shape = {
@@ -145,9 +145,9 @@ Config.Stores = {
     },
     {
         shopType = "clothing",
-        coords = vector4(-705.5, -149.22, 37.42, 122),
-        width = 4,
-        length = 4,
+        coords = vector4(-708.01, -151.93, 37.42, 301.76),
+        width = 20,
+        length = 16,
         zone = {
             shape = {
                 vector2(-719.86212158203, -147.83151245117),
@@ -161,9 +161,9 @@ Config.Stores = {
     },
     {
         shopType = "clothing",
-        coords = vector4(-1192.61, -768.4, 17.32, 216.6),
-        width = 4,
-        length = 4,
+        coords = vector4(-1193.21, -771.3, 17.32, 306.0),
+        width = 10,
+        length = 14,
         zone = {
             shape = {
                 vector2(-1206.9552001953, -775.06304931641),
@@ -179,8 +179,8 @@ Config.Stores = {
     {
         shopType = "clothing",
         coords = vector4(425.91, -801.03, 29.49, 177.79),
-        width = 4,
-        length = 4,
+        width = 13,
+        length = 11,
         zone = {
             shape = {
                 vector2(419.55020141602, -798.36547851562),
@@ -194,9 +194,9 @@ Config.Stores = {
     },
     {
         shopType = "clothing",
-        coords = vector4(-168.73, -301.41, 39.73, 238.67),
-        width = 4,
-        length = 4,
+        coords = vector4(-164.88, -302.26, 39.73, 72.0),
+        width = 20,
+        length = 15,
         zone = {
             shape = {
                 vector2(-160.82145690918, -313.85919189453),
@@ -210,9 +210,9 @@ Config.Stores = {
     },
     {
         shopType = "clothing",
-        coords = vector4(75.39, -1398.28, 29.38, 6.73),
-        width = 4,
-        length = 4,
+        coords = vector4(75.39, -1398.28, 29.38, 0.0),
+        width = 13,
+        length = 11,
         zone = {
             shape = {
                 vector2(81.406135559082, -1400.7791748047),
@@ -226,9 +226,9 @@ Config.Stores = {
     },
     {
         shopType = "clothing",
-        coords = vector4(-827.39, -1075.93, 11.33, 294.31),
-        width = 4,
-        length = 4,
+        coords = vector4(-827.39, -1075.93, 11.33, 300.0),
+        width = 13,
+        length = 11,
         zone = {
             shape = {
                 vector2(-826.26251220703, -1082.6293945312),
@@ -241,10 +241,10 @@ Config.Stores = {
         }
     },
     {
-        shopType = "clothing",
-        coords = vector4(-1445.86, -240.78, 49.82, 36.17),
-        width = 4,
-        length = 4,
+        shopType = "clothing", 
+        coords = vector4(-1449.38, -238.87, 49.81, 228.73),
+        width = 20,
+        length = 15,
         zone = {
             shape = {
                 vector2(-1448.4829101562, -226.39401245117),
@@ -258,9 +258,9 @@ Config.Stores = {
     },
     {
         shopType = "clothing",
-        coords = vector4(9.22, 6515.74, 31.88, 131.27),
-        width = 4,
-        length = 4,
+        coords = vector4(9.22, 6515.74, 31.88, 133.0),
+        width = 13,
+        length = 11,
         zone = {
             shape = {
                 vector2(6.4955291748047, 6522.205078125),
@@ -274,9 +274,9 @@ Config.Stores = {
     },
     {
         shopType = "clothing",
-        coords = vector4(615.35, 2762.72, 42.09, 170.51),
-        width = 4,
-        length = 4,
+        coords = vector4(617.31, 2760.11, 42.09, 4.0),
+        width = 11,
+        length = 15,
         zone = {
             shape = {
                 vector2(612.58312988281, 2747.2814941406),
@@ -291,8 +291,8 @@ Config.Stores = {
     {
         shopType = "clothing",
         coords = vector4(1191.61, 2710.91, 38.22, 269.96),
-        width = 4,
-        length = 4,
+        width = 13,
+        length = 11,
         zone = {
             shape = {
                 vector2(1188.7923583984, 2704.2021484375),
@@ -306,9 +306,9 @@ Config.Stores = {
     },
     {
         shopType = "clothing",
-        coords = vector4(-3171.32, 1043.56, 20.86, 334.3),
-        width = 4,
-        length = 4,
+        coords = vector4(-3171.92, 1047.78, 20.86, 155.0),
+        width = 11,
+        length = 15,
         zone = {
             shape = {
                 vector2(-3162.0075683594, 1056.7303466797),
@@ -322,9 +322,9 @@ Config.Stores = {
     },
     {
         shopType = "clothing",
-        coords = vector4(-1105.52, 2707.79, 19.11, 317.19),
-        width = 4,
-        length = 4,
+        coords = vector4(-1105.52, 2707.79, 19.11, 312.0),
+        width = 13,
+        length = 11,
         zone = {
             shape = {
                 vector2(-1103.3004150391, 2700.8195800781),
@@ -339,8 +339,8 @@ Config.Stores = {
     {
         shopType = "clothing",
         coords = vector4(-1207.65, -1456.89, 4.37, 38.59),
-        width = 4,
-        length = 4,
+        width = 8,
+        length = 10,
         zone = {
             shape = {
                 vector2(-1205.6013183594, -1458.033203125),
@@ -355,9 +355,9 @@ Config.Stores = {
     },
     {
         shopType = "clothing",
-        coords = vector4(124.82, -224.36, 54.56, 335.41),
-        width = 4,
-        length = 4,
+        coords = vector4(124.01, -219.71, 54.56, 159.7),
+        width = 11,
+        length = 15,
         zone = {
             shape = {
                 vector2(133.60948181152, -210.31390380859),
@@ -371,9 +371,9 @@ Config.Stores = {
     },
     {
         shopType = "barber",
-        coords = vector4(-814.22, -183.7, 37.57, 116.91),
-        width = 2,
-        length = 2,
+        coords = vector4(-814.22, -183.7, 37.57, 120.0),
+        width = 8,
+        length = 8,
         zone = {
             shape = {
                 vector2(-825.06127929688, -182.67497253418),
@@ -387,9 +387,9 @@ Config.Stores = {
     },
     {
         shopType = "barber",
-        coords = vector4(136.78, -1708.4, 29.29, 144.19),
-        width = 2,
-        length = 2,
+        coords = vector4(136.78, -1708.4, 29.29, 140.0),
+        width = 5,
+        length = 8,
         zone = {
             shape = {
                 vector2(132.57008361816, -1710.5053710938),
@@ -404,8 +404,8 @@ Config.Stores = {
     {
         shopType = "barber",
         coords = vector4(-1282.57, -1116.84, 6.99, 89.25),
-        width = 2,
-        length = 2,
+        width = 5,
+        length = 8,
         zone = {
             shape = {
                 vector2(-1287.4735107422, -1115.4364013672),
@@ -419,9 +419,9 @@ Config.Stores = {
     },
     {
         shopType = "barber",
-        coords = vector4(1931.41, 3729.73, 32.84, 212.08),
-        width = 2,
-        length = 2,
+        coords = vector4(1931.41, 3729.73, 32.84, 210.0),
+        width = 5,
+        length = 8,
         zone = {
             shape = {
                 vector2(1932.4931640625, 3725.3374023438),
@@ -435,9 +435,9 @@ Config.Stores = {
     },
     {
         shopType = "barber",
-        coords = vector4(1212.8, -472.9, 65.2, 60.94),
-        width = 2,
-        length = 2,
+        coords = vector4(1212.8, -472.9, 65.2, 75.0),
+        width = 5,
+        length = 8,
         zone = {
             shape = {
                 vector2(1208.3327636719, -469.84338378906),
@@ -451,9 +451,9 @@ Config.Stores = {
     },
     {
         shopType = "barber",
-        coords = vector4(-32.9, -152.3, 56.1, 335.22),
-        width = 2,
-        length = 2,
+        coords = vector4(-32.9, -152.3, 56.1, 340.0),
+        width = 5,
+        length = 8,
         zone = {
             shape = {
                 vector2(-29.730783462524, -148.67495727539),
@@ -467,9 +467,9 @@ Config.Stores = {
     },
     {
         shopType = "barber",
-        coords = vector4(-278.1, 6228.5, 30.7, 49.32),
-        width = 2,
-        length = 2,
+        coords = vector4(-278.1, 6228.5, 30.7, 45.32),
+        width = 5,
+        length = 8,
         zone = {
             shape = {
                 vector2(-280.29818725586, 6232.7265625),
@@ -483,9 +483,9 @@ Config.Stores = {
     },
     {
         shopType = "tattoo",
-        coords = vector4(1322.6, -1651.9, 51.2, 42.47),
-        width = 2,
-        length = 2,
+        coords = vector4(1323.49, -1654.53, 52.28, 40.0),
+        width = 8,
+        length = 8,
         zone = {
             shape = {
                 vector2(1323.9360351562, -1649.2370605469),
@@ -499,9 +499,9 @@ Config.Stores = {
     },
     {
         shopType = "tattoo",
-        coords = vector4(-1154.01, -1425.31, 4.95, 23.21),
-        width = 2,
-        length = 2,
+        coords = vector4(-1153.24, -1428.02, 4.96, 34.0),
+        width = 8,
+        length = 8,
         zone = {
             shape = {
                 vector2(-1152.7110595703, -1422.8382568359),
@@ -515,9 +515,9 @@ Config.Stores = {
     },
     {
         shopType = "tattoo",
-        coords = vector4(322.62, 180.34, 103.59, 156.2),
-        width = 2,
-        length = 2,
+        coords = vector4(323.75, 182.48, 103.59, 160.0),
+        width = 8,
+        length = 8,
         zone = {
             shape = {
                 vector2(319.28741455078, 179.9383392334),
@@ -531,9 +531,9 @@ Config.Stores = {
     },
     {
         shopType = "tattoo",
-        coords = vector4(-3169.52, 1074.86, 20.83, 253.29),
-        width = 2,
-        length = 2,
+        coords = vector4(-3171.84, 1077.08, 20.83, 246.0),
+        width = 8,
+        length = 8,
         zone = {
             shape = {
                 vector2(-3169.5861816406, 1072.3740234375),
@@ -547,9 +547,9 @@ Config.Stores = {
     },
     {
         shopType = "tattoo",
-        coords = vector4(1864.1, 3747.91, 33.03, 17.23),
-        width = 2,
-        length = 2,
+        coords = vector4(1865.89, 3748.97, 33.03, 120.0),
+        width = 8,
+        length = 8,
         zone = {
             shape = {
                 vector2(1860.2752685547, 3750.1608886719),
@@ -563,9 +563,9 @@ Config.Stores = {
     },
     {
         shopType = "tattoo",
-        coords = vector4(-294.24, 6200.12, 31.49, 195.72),
-        width = 2,
-        length = 2,
+        coords = vector4(-295.11, 6198.4, 31.49, 315.0),
+        width = 8,
+        length = 8,
         zone = {
             shape = {
                 vector2(-289.42239379883, 6198.68359375),
